@@ -988,6 +988,14 @@ body{
   background-repeat: no-repeat;
 }
 
+.img2-img3-box{
+    margin-top: 2%;
+    width: 50%;
+    min-height: 50vh;
+    float: right;
+    margin-right: 5%;
+  }
+
 /*------------------------------- TEXTO 12 ----------------------------------*/
 .artigo2-section12 {
   font-size: 14px; 
@@ -1696,6 +1704,12 @@ body{
     margin-top: -39%;
     margin-right: 8%;
   }
+	
+ .img2-img3-box{
+    width: 100%;
+    min-height: 50vh;
+    margin-right: 0%;
+  }
     
 /*------------------------------- TEXTO 13 ----------------------------------*/
   .artigo2-section13 {
@@ -2235,6 +2249,12 @@ body{
 	 .text11-box{
     width: 98%;
   }
+
+.img2-img3-box{
+    width: 100%;
+    min-height: 50vh;
+    margin-right: 0%;
+  }
     
 /*------------------------------- TEXTO 13 ----------------------------------*/
   .artigo2-section13 {
@@ -2756,7 +2776,15 @@ body{
     width: 20%;
     margin-right: 40px;
     margin-top: -194px;
-	  height: 30vh;
+    height: 30vh;
+  }
+	
+.img2-img3-box{
+    margin-top: 2%;
+    width: 50%;
+    min-height: 70vh;
+    float: right;
+    margin-right: 5%;
   }
 
 /*------------------------------- TEXTO 13 ----------------------------------*/
