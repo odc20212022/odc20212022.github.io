@@ -17,11 +17,7 @@ body{
   max-width: calc(100vw - 1.2%);
 }
 
-
-
-
 /* ---------------------------------------------------------------------------- PAGINA DE INICIO --------------------------------------------------------------------------------*/
-
  .loading {
 	 max-width: 100vw;
 	 height: 100vh;
@@ -109,7 +105,6 @@ body{
 		 filter: blur(4px);
 	}
 }
-
 
 /*---------------------------------------------------------------------- TITULOS ARTIGOS -------------------------------------------------------------------------------------*/
 @font-face {
@@ -718,7 +713,7 @@ body{
     width: 40%;
     margin-top: 0.5%;
     margin-right: 5%;
-      transition: transform 950ms ease-in;
+    transition: transform 950ms ease-in;
   }
 
   .artigo2-texto2 p{
@@ -745,7 +740,7 @@ body{
   }  
 
   .article2-container2{      
-    display: block;                  /*------------------------AQQQQQQQQQQQQQQQQQQQQQQQQQQUUUUUUUUUUUUUUUUUUUUUUUUUUIIIIIIIIIIIIIIIIIIIIII-------------------------------*/
+    display: block;                  
     max-width: 98vw;
     display: block;
     height: 60vh;
@@ -1042,7 +1037,8 @@ body{
   float: right;
   line-height: 1.4;
   color:#000;
-  opacity: 0;
+  opacity: 1;
+	background-color:red;
 }
 
 .artigo2-section13:hover {
