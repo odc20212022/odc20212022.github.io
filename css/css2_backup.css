@@ -1,0 +1,3094 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans'); /*ACRESCENTADO*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Work+Sans:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Work+Sans&display=swap');
+
+{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #fff;
+  max-width: calc(100vw - 1.2%);
+}
+
+
+
+
+/* ---------------------------------------------------------------------------- PAGINA DE INICIO --------------------------------------------------------------------------------*/
+
+ .loading {
+	 max-width: 100vw;
+	 height: 100vh;
+	 background: #000;
+   top: 0;
+   left: 0;
+}
+
+ .loading-text {
+	 position: absolute;
+	 top: 0;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+	 margin: auto;
+	 text-align: center;
+	 width: 100%;
+	 height: 100px;
+	 line-height: 50px;
+   font-size: 28px;
+}
+ .loading-text span {
+	 display: inline-block;
+	 margin: 0 5px;
+	 color: #fff;
+	 font-family: "Roboto", sans-serif;
+}
+
+ .loading-text span:nth-child(1) {
+	 filter: blur(0px);
+	 animation: blur-text 1.5s 0s infinite linear alternate; /*tirar o 'infinite' se preferir que só faça 1 vez*/
+}
+
+ .loading-text span:nth-child(2) {
+	 filter: blur(0px);
+	 animation: blur-text 1.5s 0.2s infinite linear alternate;
+}
+
+ .loading-text span:nth-child(3) {
+	 filter: blur(0px);
+	 animation: blur-text 1.5s 0.4s infinite linear alternate;
+}
+
+ .loading-text span:nth-child(4) {
+	 filter: blur(0px);
+	 animation: blur-text 1.5s 0.6s infinite linear alternate;
+}
+
+ .loading-text span:nth-child(5) {
+	 filter: blur(0px);
+	 animation: blur-text 1.5s 0.8s infinite linear alternate;
+}
+
+ .loading-text span:nth-child(6) {
+	 filter: blur(0px);
+	 animation: blur-text 1.5s 1s infinite linear alternate;
+}
+
+ .loading-text span:nth-child(7) {
+	 filter: blur(0px);
+	 animation: blur-text 1.5s 1.2s infinite linear alternate;
+}
+
+/*NOVAS LETRAS*/
+.loading-text span:nth-child(8) {
+  filter: blur(0px);
+  animation: blur-text 1.5s 1.4s infinite linear alternate;
+}
+
+.loading-text span:nth-child(9) {
+  filter: blur(0px);
+  animation: blur-text 1.5s 1.6s infinite linear alternate;
+}
+
+.loading-text span:nth-child(10) {
+  filter: blur(0px);
+  animation: blur-text 1.5s 1.6s infinite linear alternate;
+}
+
+ @keyframes blur-text {
+	 0% {
+		 filter: blur(0px);
+	}
+	 100% {
+		 filter: blur(4px);
+	}
+}
+
+
+/*---------------------------------------------------------------------- TITULOS ARTIGOS -------------------------------------------------------------------------------------*/
+@font-face {
+  font-family: "Bandeins Strange Variable";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/85648/BandeinsStrangeVariableGX.ttf");
+}
+
+.titulos_artigos{
+  background-color: #fff;
+  max-width: 100vw;
+}
+
+.titulos_artigos h1 {
+  font-family: 'Bandeins Strange Variable';
+  font-variation-settings: 'wdth' 800,'wght' 800;
+  font-size: 128px;
+  transition: 10s ease;
+  color: black;
+}
+
+.titulos_artigos h1:hover{
+  font-variation-settings: 'wdth' 100,'wght' 400;
+}
+
+/* ---------------------------------------------------------------------------------- NAVBAR --------------------------------------------------------------------------------- */
+  .navBar {
+  background-color: #fff;
+  display: flex;
+  position: fixed;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  }
+
+.alta a{
+  color: #000000d7;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.alta-links{
+  font-family: 'Advent Pro', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  width: 100%; 
+  font-size: 18px;
+  text-decoration: none;
+  padding-right: 10%;
+  padding-left: 10%;
+  text-align: center; 
+  text-transform: uppercase;
+}
+  
+.alta-links li{
+  list-style: none; /*tirar a decoracao que aparecia atras dos links- bolas*/
+  padding-right: 1%;
+  padding-left: 1%;
+  margin-left: 5%;
+  margin-right: 8%;
+}
+  
+.alta-links a{
+  color: #000000d7;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-shadow: 1px 1px 4px #0000005e;
+}
+  
+.alta-links a:hover{
+  color:#0000005b;
+  text-decoration: underline;
+}
+
+/*------------------------------------------------------------------- MICHAEL BIERUT -----------------------------------------------------------------------*/
+.image,
+.michael_photo {
+  background: url(../revista_odc/src/michael.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+/*-------------------------------------------------------------------- ARTIGO 1 -----------------------------------------------------------------------------*/
+  #more {display: none;}
+
+  .article1-section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    display: flex;
+  }
+
+  .article1-container{
+    width: 100%;
+    display: block;
+  }
+
+/*------------------------------------------------------------------------TEXTO---------------------------------------------------------------------------------------*/
+  .article1-first_paragraph{
+    margin-top: 0%;
+    width: 90%;
+    text-align: left;
+    color:#000000;
+    font-size: 24px; 
+    font-family: 'Work Sans', sans-serif;
+    line-height: 2;
+    padding-right: 5%; 
+    padding-left: 5%;
+  }
+
+/*------------------------------------------------------------------------THIRTEEN WAYS OF ---------------------------------------------------------------------------------------*/
+  .article1-thirteen{
+    margin-top: 0%;
+    width: 60%;
+    text-align: justify;
+    line-height: 1.2;
+    padding-top: 0%;
+    padding-left: 5%;
+  }
+
+  .article1-thirteen p{
+    width: 90%;
+    /*font-weight: lighter;*/
+    width: 60%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    color:#000000;
+    font-size: 160px; 
+    font-family: "Bandeins Strange Variable";
+    text-shadow: 0px 0px 0px salmon, 0px 0px 0px lightblue; 
+  }
+
+  .article1-thirteen p:hover{
+    text-shadow: -6px 0px 4px salmon, 6px 0px 4px lightblue;
+  }
+
+/*------------------------------------------------------------------------TEXTO - 2 PARAGRAFO---------------------------------------------------------------------------------------*/
+/* ecra  primeiros paragrafo */
+  .artigo1-section{
+    width: 100%;
+    min-height: 80vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+  }
+
+  .artigo1-section2{
+    width: 100%;
+    min-height: 80vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+  }
+
+  .artigo1-section3{
+    width: 100%;
+    min-height: 80vh;
+    background-color: rgba(0, 0, 0, 0.911);
+    display: flex;
+    justify-content: center;
+  }
+
+  .artigo1-container{
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .artigo1-container3{
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .about-image{
+    margin-top: 94px;  
+    float: right;
+    width: 41%;
+    text-align: center;
+    margin-right: 5%;
+  }
+
+/*------------------------------------------------------------------------TEXTO - 1 PARAGRAFO---------------------------------------------------------------------------------------*/
+  .artigo1-content-section{
+    float: left;
+    width: 55%;
+    margin-top: 2%;
+    margin-left: 5%;
+  }
+  .artigo1-content p{
+    font-size: 18px; 
+    line-height: 1.4;
+    padding-top: 14px;
+    color:#000;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  }
+
+/*------------------------------------------------------------------------TEXTO - 2 PARAGRAFO---------------------------------------------------------------------------------------*/
+  .artigo1-content-section2{
+    float: right;
+    width: 40%;
+    margin-top: 8%;
+    margin-bottom: 0;
+    margin-right: 10%;
+  }
+
+  .artigo1-content2 p{
+    font-size: 18px; 
+    line-height: 1.4;
+    padding-top: 14px;
+    color:#000;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  }
+
+/* -------------------------------------------------------------------------- LOOKING AT A TYPEFACE --------------------------------------------------------------------------- */
+  .article1-looking{
+    margin-top: 0;
+    padding-top: 0;
+    margin-right: 5%;
+    width: 98%;
+    float: left;
+    line-height: 1.2;  
+  }
+
+  .article1-looking p{
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    color:#000000;
+    font-size: 160px; 
+    font-family: "Bandeins Strange Variable";
+    text-shadow: 0px 0px 0px salmon, 0px 0px 0px lightblue;
+  }
+
+  .article1-looking p:hover{
+    text-shadow: -6px 0px 4px salmon, 6px 0px 4px lightblue;
+  }
+
+/* ---------------------------------------------------------------------- PAGINA 2 - ARTIGO 1 ---------------------------------------------------------------------------- */
+/*--------------------------- TEXTO - 1 ARGUMENTO ------------------------------------*/
+.artigo1-argumento1-section{
+	float: left;
+	width: 55%;
+	margin-top: 0;
+	margin-left: 5%;
+}
+.artigo1-argumento1 p{
+  font-size: 18px; 
+  line-height: 1.4;
+	padding-top: 14px;
+	color:#000;
+  font-family: 'Work Sans', sans-serif;
+  text-align: justify;
+}
+
+/*--------------------------- TEXTO - 2 ARGUMENTO ---------------------------------------*/
+  .artigo1-argumento2-section{
+    float: right;
+    width: 40%;
+    margin-top: 5%;
+    margin-right: 10%;
+  }
+
+  .artigo1-argumento2 p{
+    font-size: 18px; 
+    line-height: 1.4;
+    padding-top: 14px;
+    color:#000;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  }
+
+/*------------------------------ TEXTO - 3 ARGUMENTO -------------------------------------*/
+  .artigo1-argumento3-section{
+    float: left;
+    width: 55%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  .artigo1-argumento3 p{
+    font-size: 18px; 
+    line-height: 1.4;
+    padding-top: 14px;
+    color:#000;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  }
+
+/*------------------------------- TEXTO - 4 PARAGRAFO ----------------------------------*/
+  .artigo1-argumento4-section{
+    float: right;
+    width: 40%;
+    margin-top: 5%;
+    margin-right: 10%;
+  }
+  .artigo1-argumento4 p{
+    font-size: 18px; 
+    line-height: 1.4;
+    padding-top: 14px;
+    color:#000;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  }
+
+/*---------------------------------------------------------------------------------PAGINA 3 ARTIGO 1-------------------------------------------------------------------------*/
+  .article1-container3{
+    width: 100%;
+    display: block;
+  }
+
+  .article1-section3{
+    width: 100%;
+    min-height: 50vh;
+    background-color: #fff;
+    display: flex;
+  }
+
+/*--------------------------- TEXTO - 5 ARGUMENTO ------------------------------------*/
+  .artigo1-argumento5-section{
+    float: left;
+    width: 55%;
+    margin-top: 0;
+    margin-left: 5%;
+  }
+  .artigo1-argumento5 p{
+    font-size: 18px; 
+    line-height: 1.4;
+    padding-top: 14px;
+    color:#fff;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  }
+
+/*--------------------------- TEXTO - 6 ARGUMENTO ---------------------------------------*/
+  .artigo1-argumento6-section{
+    float: right;
+    width: 40%;
+    margin-top: 5%;
+    margin-right: 10%;
+  }
+
+  .artigo1-argumento6 p{
+    font-size: 18px; 
+    line-height: 1.4;
+    padding-top: 14px;
+    color:#fff;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  }
+
+/*------------------------------ TEXTO - 7 ARGUMENTO -------------------------------------*/
+  .artigo1-argumento7-section{
+    float: left;
+    width: 55%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  .artigo1-argumento7 p{
+    font-size: 18px; 
+    line-height: 1.4;
+    padding-top: 14px;
+    color:#fff;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  }
+
+/*------------------------------- TEXTO - 8 PARAGRAFO ----------------------------------*/
+  .artigo1-argumento8-section{
+    float: right;
+    width: 40%;
+    margin-top: 5%;
+    margin-right: 10%;
+  }
+  .artigo1-argumento8 p{
+    font-size: 18px; 
+    line-height: 1.4;
+    padding-top: 14px;
+    color:#fff;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  }
+
+/*--------------------------- TEXTO - 9 ARGUMENTO ------------------------------------*/
+  .artigo1-argumento9-section{
+    float: left;
+    width: 55%;
+    margin-top: 0;
+    margin-left: 5%;
+  }
+  .artigo1-argumento9 p{
+    font-size: 18px; 
+    line-height: 1.4;
+    padding-top: 14px;
+    color:#000;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  }
+
+/*--------------------------- TEXTO - 10 ARGUMENTO ---------------------------------------*/
+  .artigo1-argumento10-section{
+    float: right;
+    width: 40%;
+    margin-top: 5%;
+    margin-right: 10%;
+  }
+
+  .artigo1-argumento10 p{
+    font-size: 18px; 
+    line-height: 1.4;
+    padding-top: 14px;
+    color:#000;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  }
+
+/*------------------------------ TEXTO - 11 ARGUMENTO -------------------------------------*/
+  .artigo1-argumento11-section{
+    float: left;
+    width: 55%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  .artigo1-argumento11 p{
+    font-size: 18px; 
+    line-height: 1.4;
+    padding-top: 14px;
+    color:#000;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  }
+
+/*------------------------------- TEXTO - 12 PARAGRAFO ----------------------------------*/
+  .artigo1-argumento12-section{
+    float: right;
+    width: 40%;
+    margin-top: 5%;
+    margin-right: 10%;
+  }
+  .artigo1-argumento12 p{
+    font-size: 18px; 
+    line-height: 1.4;
+    padding-top: 14px;
+    color:#000;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  }
+
+
+/*------------------------------- TEXTO - 13 PARAGRAFO ----------------------------------*/
+  .artigo1-argumento13-section{
+    float: left;
+    width: 55%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+  }
+  .artigo1-argumento13 p{
+
+    font-size: 18px; 
+    line-height: 1.4;
+    padding-top: 14px;
+    color:#000;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  }
+
+  .bold-title{
+    font-size: 18px; 
+    line-height: 1.4;
+    padding-top: 14px;
+    color:#000;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  } 
+
+/*------------------------------------------------------------------- CATARINA MAÇÃS -----------------------------------------------------------------------*/
+  .image,
+  .catarina_photo {
+    background: url(../revista_odc/src/catarina.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
+/*-------------------------------------------------------------------- ARTIGO 2 -----------------------------------------------------------------------------*/
+  #more {display: none;}
+
+  .article2-section{
+    width: 100%;
+    min-height: 95vh;
+    background-color: #fff;
+    display: flex;
+  }
+
+/*------------------------------------------------------------------------TEXTO---------------------------------------------------------------------------------------*/
+  .article2-first_paragraph{
+    margin-top: 0%;
+    padding-top: 5%;
+    width: 90%;
+    text-align: justify;
+    color:#000000;
+    font-size: 24px; 
+    font-family: 'Work Sans', sans-serif;
+    line-height: 2;
+    padding-right: 5%; 
+    padding-left: 5%;
+  }
+
+/*---------------------------------------------------------------------------------PAGINA 1 ARTIGO 2-------------------------------------------------------------------------*/
+  .article2-section1{
+    width: 100%;
+    min-height: 80vh;
+    background-color: rgba(0, 0, 0, 0.911);
+    display: flex;
+    justify-content: center;
+  }
+
+  .article2-container1{
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+/*--------------------------- TEXTO 1 ------------------------------------*/
+.artigo2-section1{
+	float: left;
+	width: 40%;
+	margin-top: 0;
+	margin-left: 5%;
+}
+
+.artigo2-texto1 p{
+  font-size: 18px; 
+  line-height: 1.4;
+	padding-top: 14px;
+	color:#fff;
+  font-family: 'Work Sans', sans-serif;
+  text-align: justify;
+}
+
+.move1 {
+    font-size: 18px; 
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 142px;
+    margin-right: 620px;
+    color: #fff;
+    float: right;
+    transition: transform 950ms ease-in;
+  }
+  
+  .move1:hover {
+    transform: translateX(-255px);
+  }
+
+.move2 {
+    font-size: 18px; 
+    font-family: 'Work Sans', sans-serif;
+    margin-top: -7px;
+    margin-right: 540px;
+    color: #fff;
+    float: right;
+    transition: transform 950ms ease-in;
+  }
+  
+  .move2:hover {
+    transform: translateX(-546px);
+  }
+
+  .move3 {
+    font-size: 18px; 
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 120px;
+    margin-right: 350px;
+    color: #fff;
+    float: right;
+    transition: transform 950ms ease-in;
+  }
+  
+  .move3:hover {
+    transform: translateX(-610px);
+  }
+
+  .artigo2-section2{
+    float: right;
+    width: 40%;
+    margin-top: 0.5%;
+    margin-right: 5%;
+      transition: transform 950ms ease-in;
+  }
+
+  .artigo2-texto2 p{
+    font-size: 18px; 
+    line-height: 1.4;
+    padding-top: 14px;
+    color:#fff;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  }
+
+  .artigo2-section2:hover {
+    transform: translateX(-667px);
+  }
+
+ /*---------------------------------------------------------------------------------PAGINA 2 ARTIGO 2-------------------------------------------------------------------------*/
+  .article2-section2{
+    display: block;
+    max-width: 100vw;
+    min-height: 70vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+  }  
+
+  .article2-container2{      
+    display: block;                  /*------------------------AQQQQQQQQQQQQQQQQQQQQQQQQQQUUUUUUUUUUUUUUUUUUUUUUUUUUIIIIIIIIIIIIIIIIIIIIII-------------------------------*/
+    max-width: 98vw;
+    display: block;
+    height: 60vh;
+    margin: 0;
+    padding-bottom: 1%;
+  }
+
+  .container-part1{
+    display: block;
+    top: 0;
+    max-width: 98vw;
+    height: 100%;
+  }
+
+  .container-part2{
+    display: block;
+    top: 0;
+    max-width: 98vw;
+    height: 60vh;
+  }
+
+  .container-part3{
+    display: block;
+    top: 5%;
+    max-width: 98vw;
+    height: 100vh;
+  }
+/*--------------------------- TEXTO 3 ------------------------------------*/
+  .artigo2-section3{
+    float: left;
+    width: 40%;
+    margin-top: 0;
+    margin-left: 5%;
+  }
+
+  .artigo2-texto3 p{
+    font-size: 18px; 
+    line-height: 1.4;
+    padding-top: 14px;
+    color:#000;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  }
+
+/*--------------------------- TEXTO 4 ---------------------------------------*/
+.artigo2-section4{
+	float: right;
+	width: 40%;
+	margin-top: 0;
+	margin-right: 10%;
+}
+
+.artigo2-texto4 p{
+  font-size: 14px; 
+  line-height: 1.4;
+	padding-top: 14px;
+	color:#000;
+  font-family: 'Work Sans', sans-serif;
+  text-align: justify;
+}
+
+/*------------------------------ IMAGEM 1 -------------------------------------*/
+
+  .imagem1 {
+    float: right;
+    width: 38%;
+    margin-right: 10%;
+    margin-top: 5%;
+	  height: 20vh;
+    background-image: url(../revista_odc/src/imagem_1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+/*------------------------------ TEXTO 5 -------------------------------------*/
+
+.artigo2-section5{
+	float: right;
+	margin-top:5%;
+	margin-right: -5%;
+    height: 20vh;
+    opacity: 0;
+}
+
+.artigo2-texto5 p{
+  font-size: 14px; 
+  line-height: 1.4;
+	padding-top: 14px;
+	color:#000;
+  font-family: 'Work Sans', sans-serif;
+  text-align: justify;
+}
+  
+  .artigo2-section5:hover {
+    transform: translateY(-90px);
+    opacity: 1;
+    transition: opacity 100ms;
+  }
+
+/*------------------------------- TEXTO 6 ----------------------------------*/
+
+.artigo2-section6{
+	float: right;
+	margin-top: 6%;
+	margin-right: -12%;
+  height: 20vh;
+  opacity:0;
+}
+
+.artigo2-texto6 p{
+  font-size: 14px; 
+  line-height: 1.4;
+	padding-top: 50%;
+	color:#000;
+  font-family: 'Work Sans', sans-serif;
+  text-align: justify;
+}
+  
+  .artigo2-section6:hover {
+    transform: translateY(108px);
+    opacity: 1;
+    transition: opacity 100ms;
+  }
+
+/*------------------------------- TEXTO 7 ----------------------------------*/
+
+.artigo2-section7{
+	float: right;
+	margin-top: 6%;
+	margin-right: -18%;
+  height: 20vh;
+  opacity: 0;
+}
+
+.artigo2-texto7 p{
+  font-size: 14px; 
+  line-height: 1.4;
+	padding-top: 50%;
+	color:#000;
+  font-family: 'Work Sans', sans-serif;
+  text-align: justify;
+}
+  
+  .artigo2-section7:hover {
+    transform: translateY(138px);
+    opacity: 1;
+    transition: opacity 100ms;
+  }
+
+/*------------------------------- TEXTO 8 ----------------------------------*/
+
+.artigo2-section8{
+	float: right;
+	margin-top: 6%;
+	margin-right: -25%;
+  height: 20vh;
+  opacity: 0;
+}
+
+.artigo2-texto8 p{
+  font-size: 14px; 
+  line-height: 1.4;
+	padding-top: 50%;
+	color:#000;
+  font-family: 'Work Sans', sans-serif;
+  text-align: justify;
+}
+  
+  .artigo2-section8:hover {
+    transform: translateY(50%);
+    opacity: 1;
+    transition: opacity 100ms;
+  }
+
+/*------------------------------- TEXTO 9 ----------------------------------*/
+
+.artigo2-section9{
+	float: right;
+	margin-top: 6%;
+	margin-right: -32%;
+  height: 20vh;
+  opacity: 0;
+}
+
+  .artigo2-texto9 p{
+    font-size: 14px; 
+    line-height: 1.4;
+    padding-top: 50%;
+    color:#000;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  }
+  
+  .artigo2-section9:hover {
+    transition: opacity 100ms;
+    transform: translateY(50%);
+    opacity: 1;
+  }
+
+/*------------------------------- TEXTO 10 ----------------------------------*/
+  .artigo2-section10{
+    float: right;
+    margin-top: 6%;
+    margin-right: -40%;
+    height: 20vh;
+    opacity: 0;
+  }
+
+  .artigo2-texto10 p{
+    font-size: 14px; 
+    line-height: 1.4;
+    padding-top: 50%;
+    color:#000;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  }
+  
+  .artigo2-section10:hover {
+    transition: opacity 100ms;
+    transform: translateY(-55%);
+    opacity: 1;
+  }
+
+ /*---------------------------------------------------------------------------------PAGINA 3 ARTIGO 2-------------------------------------------------------------------------*/
+  .article2-section3{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    background-color: aqua;
+  }  
+
+  .article2-container3{
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+/*--------------------------- TEXTO 11 ------------------------------------*/
+  .text11-box{
+    display: flex;
+    width: 40%;
+    margin-top: 2%;
+    margin-left: 1%;
+    float: left;
+  }
+
+  .artigo2-texto11 p{
+    width: 90%;
+    font-size: 18px; 
+    line-height: 1.4;
+    padding-top: 14px;
+    color:#000;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  }
+
+/*------------------------------- TEXTO 12 ----------------------------------*/
+  .artigo2-section12 {
+    float: left;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+    width: 98%;
+    height: 20vh;
+    margin-top: 0%;
+    line-height: 1.4;
+	  color:#000;
+    opacity: 0;
+  }
+  
+  .artigo2-section12:hover {
+    transition: opacity 100ms;
+    transform: translateY(80%);
+    opacity: 1;
+  }
+
+  .artigo2-texto12 p{
+    font-size: 14px; 
+    padding-top: 20%;
+  }
+  
+  /*------------------------------- TEXTO 13 ----------------------------------*/
+.artigo2-section13 {
+  font-family: 'Work Sans', sans-serif;
+  text-align: justify;
+  width: 98%;
+  margin-right: 0;
+  height: 20vh;
+  margin-top: 0%;
+  float: right;
+  line-height: 1.4;
+  color:#000;
+  opacity: 0;
+}
+
+.artigo2-section13:hover {
+  transition: opacity 100ms;
+  transform: translateY(80%);
+  opacity: 1;
+}
+
+.artigo2-texto13 p{
+  font-size: 14px; 
+  padding-top: 20%;
+}
+
+/*------------------------------ IMAGEM 2 e 3 -------------------------------------*/
+  .img2-img3-box{
+    margin-top: 2%;
+    width: 50%;
+    min-height: 50vh;
+    float: right;
+    margin-right: 5%;
+  }
+
+.imagem2 {
+  float: left;
+  width: 40%;
+  margin-right: 1%;
+  margin-top: 10%;
+  height: 20vh;
+  background-image: url(../revista_odc/src/imagem_2.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.imagem3 {
+  float: right;
+  width: 40%;
+  margin-right: 0;
+  margin-left: 0%;
+  margin-top: 10%;
+  height: 20vh;
+  background-image: url(../revista_odc/src/imagem_3.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+/*--------------------------- TEXTO 14 ------------------------------------*/
+.artigo2-section14{
+	float: right;
+	width: 40%;
+	margin-top: 8%;
+	margin-right: 5%;
+}
+
+.artigo2-texto14 p{
+  font-size: 18px; 
+  line-height: 1.4;
+	padding-top: 14px;
+	color:#000;
+  font-family: 'Work Sans', sans-serif;
+  text-align: justify;
+}
+
+/*------------------------------ IMAGEM 4 -------------------------------------*/
+  .imagem4 {
+    float: left;
+    width: 20%;
+    margin-top: 9%;
+    margin-left: 15%;
+	  height: 60vh;
+    background-image: url(../revista_odc/src/imagem_4.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+/*------------------------------- TEXTO 15 ----------------------------------*/
+.artigo2-section15 {
+    font-size: 14px; 
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+    width: 35%;
+    height: 60vh;
+    margin-left: -10%;
+    margin-top: 0%;
+    float: left;
+    line-height: 1.4;
+	  color:#000;
+    opacity: 0;
+  }
+  
+  .artigo2-section15:hover {
+    transition: opacity 100ms;
+    transform: translateX(30%);
+    opacity: 1;
+    height: 6vh;
+  }
+
+/*---------------------------------------------------------------------------------PAGINA 4 ARTIGO 2-------------------------------------------------------------------------*/
+  .article2-section16{
+    width: 100%;
+    min-height: 80vh;
+    background-color: rgba(0, 0, 0, 0.911);
+    display: flex;
+    justify-content: center;
+  }
+
+  .article2-container16{
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+/*--------------------------- TITULO ------------------------------------*/
+  .artigo2-section17{
+    float: left;
+    margin-top: 0;
+    margin-left: 5%;
+  }
+
+  .artigo2-texto17 p{
+    font-size: 40px; 
+    line-height: 1.4;
+    padding-top: 14px;
+    color:#fff;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  }
+
+  .titulo2 {
+    font-size: 45px; 
+    font-weight: 50;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+    color:#fff;
+    width: 200px;
+    margin-left: -50px;
+    margin-top: 0px;
+    height: 200px;
+    float: left;
+    line-height: 1.4;
+    padding: 50px;
+    opacity: 0;
+  }
+  
+  .titulo2:hover {
+    transform: translateY(20px);
+    transition: opacity 100ms;
+    opacity: 1;
+  }
+
+  .titulo4{
+    float: left;
+    color:#fff;
+    font-size: 40px; 
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 240px;
+    margin-left: -25px;
+    line-height: 1.4;
+  }
+
+/*--------------------------- TEXTO 18 ------------------------------------*/
+  .artigo2-section18{
+    float: right;
+    width: 40%;
+    margin-top: 25%;
+    margin-right: 5%;
+  }
+
+  .artigo2-texto18 p{
+    font-size: 18px; 
+    line-height: 1.4;
+    padding-top: 14px;
+    color:#fff;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+  }
+
+/* ----------------------------------------------------------------------------------------ABOUT------------------------------------------------------------------------------------ */
+  .about-section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-container{
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .about-content-section{
+    float: left;
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .about-h1{
+    font-size: 36px;
+    color:#000;
+    letter-spacing: 1px;
+    font-size: 80px; 
+    font-family: "Bandeins Strange Variable";
+  }
+
+/* ABOUT imagem */
+  .about-image{
+    margin-top: 0; /* 80 + 14 (margin-top do texto da esquerda) */
+    margin-right: 0;
+    float: right;
+    width: 41%;
+    text-align: center;
+  }
+
+  .about-image img{
+    width: 70%;
+    height: auto;
+  }
+
+/* ABOUT texto */
+
+.about-content p{
+  font-family: 'Work Sans', sans-serif;
+	padding-top: 0;
+	color:#000;
+  font-size: 24px; 
+  line-height: 1.4;
+  text-align: justify;
+}
+
+
+/*----------------------------------------------------------------------------------MEDIA QUERIES SMALL --------------------------------------------------------------------------*/
+@media all and (min-width: 5px) and (max-width:640px){
+	.artigo1-section2{
+		min-height: 50vh;
+	}
+	/*-------------------------------------------*/
+	.artigo1-section{
+			width: 100%;
+			min-height: 50vh;
+			display: flex;
+			justify-content: center;
+		}
+
+	.artigo1-section3{	
+		width: 100%;
+		min-height: 50vh;
+		display: flex;
+		justify-content: center;
+	}
+ /*--------------- Pagina inicial 'ALTA BAIXA' tamanho da letra ------------------*/
+  .loading-text {
+    font-size: 14px;
+ }
+
+  /*-------------------- NAV BAR ------------------*/
+
+  .alta-links{
+    font-size: 13px;
+  }
+  
+  /* -------------- 1 paragrafo --------------*/
+  .article1-first_paragraph{
+    font-size: 16px; 
+  }
+  /*-------------- thirteen ways of -----------------*/
+
+.article1-thirteen p{
+  font-size: 80px; 
+}
+
+/*-------------- looking at a typeface -----------------*/
+
+.article1-looking p{
+  font-size: 80px; 
+}
+
+
+/*primeiros 4 paragrafos do primeiro artigo*/
+
+/*----- TEXTO - 1 PARAGRAFO -------*/
+.artigo1-content-section{
+	width: 80%;
+	margin-left: 8%;
+}
+.artigo1-content p{
+  font-size: 12px; 
+	padding-top: 14px;
+}
+
+/*------ TEXTO - 2 PARAGRAFO ------*/
+.artigo1-content-section2{
+	float: left;
+	width: 80%;
+	margin-top: 0;
+	margin-left: 8%;
+}
+.artigo1-content2 p{
+  font-size: 12px; 
+  line-height: 1.4;
+	padding-top: 14px;
+	color:#000;
+  font-family: 'Work Sans', sans-serif;
+  text-align: justify;
+	font-weight: bold;
+}
+
+/*------- TEXTO - 3 PARAGRAFO --------*/
+.artigo1-content-section3{
+	float: left;
+	width: 80%;
+	margin-top: 0;
+	margin-left: 8%;
+}
+.artigo1-content3 p{
+  font-size: 12px; 
+  line-height: 1.4;
+	padding-top: 14px;
+	color:#000;
+  font-family: 'Work Sans', sans-serif;
+  text-align: justify;
+	font-weight: bold;
+}
+
+/*-------- TEXTO - 4 PARAGRAFO --------*/
+.artigo1-content-section4{
+	float: left;
+	width: 80%;
+	margin-top: 0;
+	margin-left: 8%;
+}
+.artigo1-content4 p{
+  font-size: 12px; 
+  line-height: 1.4;
+	padding-top: 14px;
+	color:#000;
+  font-family: 'Work Sans', sans-serif;
+  text-align: justify;
+	font-weight: bold;
+}
+
+/*--------------------------- TEXTO - 1 ARGUMENTO --------------------------------*/
+.artigo1-argumento1-section{
+	width: 80%;
+}
+.artigo1-argumento1 p{
+  font-size: 12px; 
+}
+
+/*--------------------------- TEXTO - 2 ARGUMENTO --------------------------------*/
+.artigo1-argumento2-section{
+  width: 80%;
+}
+
+.artigo1-argumento2 p{
+  font-size: 12px; 
+}
+
+/*------------------------------ TEXTO - 3 ARGUMENTO -----------------------------*/
+.artigo1-argumento3-section{
+	width: 80%;
+}
+
+.artigo1-argumento3 p{
+  font-size: 12px; 
+}
+
+/*------------------------------- TEXTO - 4 PARAGRAFO ---------------------------*/
+.artigo1-argumento4-section{
+  width: 80%;
+}
+.artigo1-argumento4 p{
+  font-size: 12px; 
+}
+
+/*--------------------------- TEXTO - 5 ARGUMENTO ------------------------------------*/
+.artigo1-argumento5-section{
+	width: 80%;
+}
+.artigo1-argumento5 p{
+  font-size: 12px; 
+}
+
+/*--------------------------- TEXTO - 6 ARGUMENTO ---------------------------------------*/
+
+.artigo1-argumento6-section{
+  width: 80%;
+}
+
+.artigo1-argumento6 p{
+  font-size: 12px; 
+}
+
+/*------------------------------ TEXTO - 7 ARGUMENTO -------------------------------------*/
+.artigo1-argumento7-section{
+  width: 80%;
+}
+
+.artigo1-argumento7 p{
+  font-size: 12px; 
+}
+
+/*------------------------------- TEXTO - 8 PARAGRAFO ----------------------------------*/
+.artigo1-argumento8-section{
+  width: 80%;
+}
+.artigo1-argumento8 p{
+  font-size: 12px; 
+}
+
+/*--------------------------- TEXTO - 9 ARGUMENTO ------------------------------------*/
+.artigo1-argumento9-section{
+	width: 80%;
+}
+.artigo1-argumento9 p{
+	font-size: 12px; 
+}
+
+/*--------------------------- TEXTO - 10 ARGUMENTO ---------------------------------------*/
+
+.artigo1-argumento10-section{
+	width: 80%;
+}
+
+.artigo1-argumento10 p{
+	font-size: 12px; 
+}
+
+/*------------------------------ TEXTO - 11 ARGUMENTO -------------------------------------*/
+.artigo1-argumento11-section{
+	width: 80%;
+}
+
+.artigo1-argumento11 p{
+	font-size: 12px; 
+}
+
+/*------------------------------- TEXTO - 12 PARAGRAFO ----------------------------------*/
+.artigo1-argumento12-section{
+	width: 80%;
+}
+.artigo1-argumento12 p{
+	font-size: 12px; 
+}
+
+
+/*------------------------------- TEXTO - 13 PARAGRAFO ----------------------------------*/
+.artigo1-argumento13-section{
+	width: 80%;
+}
+.artigo1-argumento13 p{
+	font-size: 12px; 
+}
+    
+/*------------------------ ARTIGO 2 -INTRODUÇAO ---------------------------------*/
+.article2-first_paragraph{
+  font-size: 16px; 
+}
+    
+/*------------------------------- TEXTO 1 --------------------------------------*/
+.artigo2-section1{
+	width: 40%;
+	margin-left: 8%;
+}
+
+.artigo2-texto1 p{
+  font-size: 12px; 
+	padding-top: 14px;
+}
+    
+/*------------------------------- TEXTO 2 --------------------------------------*/
+.artigo2-section2{
+	width: 40%;
+	margin-right: 8%;
+  margin-top: 3.5%;
+  transition: transform 950ms ease-in;
+}
+.artigo2-texto2 p{
+  font-size: 12px; 
+	padding-top: 14px;
+}
+
+.artigo2-section2:hover {
+    transform: translateX(-206px);
+  }
+    
+/*-----------------------ANIMAÇOES----------------------------------------*/
+.move1 {
+  font-size: 12px; 
+  margin-top: 167px;
+  margin-right: 200px;
+  transition: transform 950ms ease-in;
+}
+  
+.move1:hover {
+  transform: translateX(-130px);
+}
+
+.move2 {
+  font-size: 12px; 
+  margin-top: 12px;
+  margin-right: 160px;
+  transition: transform 950ms ease-in;
+}
+  
+.move2:hover {
+  transform: translateX(-112px);
+}
+
+.move3 {
+  font-size: 12px; 
+  margin-top: 197px;
+  margin-right: 100px;
+  transition: transform 950ms ease-in;
+}
+  
+.move3:hover {
+  transform: translateX(-237px);
+}
+    
+/*------------------------------- TEXTO 3 -----------------------------------------*/
+.artigo2-section3{
+	width: 80%;
+	margin-left: 8%;
+}
+.artigo2-texto3 p{
+  font-size: 12px; 
+	padding-top: 14px;
+}
+    
+/*------------------------------- TEXTO 4 -----------------------------------------*/
+.artigo2-section4{
+	margin-left: 8%;
+    float: left;
+    width: 50%;
+}
+.artigo2-texto4 p{
+  font-size: 10px; 
+	padding-top: 14px;
+}
+    
+/*------------------------------- TEXTO 5 -----------------------------------------*/
+.artigo2-section5{
+	float: left;
+	margin-top:-13vh;
+	margin-right: 0;
+  margin-left: 5%;
+    height: 20vh;  
+}
+
+.artigo2-texto5 p{
+  font-size: 10px; 
+}
+  
+  .artigo2-section5:hover {
+    transform: translateY(-40%);
+
+  }
+
+
+/*------------------------------- TEXTO 6 ----------------------------------*/
+  .artigo2-section6{
+    float: right;
+    margin-top: -30%;
+    margin-right: 65%;
+    height: 15vh;
+  
+  }
+
+  .artigo2-texto6 p{
+    font-size: 10px; 
+    padding-top: 50%;
+  }
+  
+  .artigo2-section6:hover {
+    transform: translateY(90%);
+  }
+
+/*------------------------------- TEXTO 7 ----------------------------------*/
+  .artigo2-section7{
+    float: right;
+    margin-top: -30%;
+    margin-right: 51.5%;
+    height: 15vh;
+  }
+
+  .artigo2-texto7 p{
+    font-size: 10px; 
+    padding-top: 50%;
+  }
+    
+  .artigo2-section7:hover {
+    transform: translateY(80%);
+  }
+
+  /*------------------------------- TEXTO 8 ----------------------------------*/
+  .artigo2-section8{
+    float: right;
+    margin-top: -30%;
+    margin-right: 38%;
+    height: 15vh;
+  
+  }
+
+  .artigo2-texto8 p{
+    font-size: 10px; 
+    padding-top: 50%;
+  }
+    
+  .artigo2-section8:hover {
+    transform: translateY(90%);
+  }
+
+  /*------------------------------- TEXTO 9 ----------------------------------*/
+  .artigo2-section9{
+    float: right;
+    margin-top: -30%;
+    margin-right: 22%;
+    height: 15vh;
+  }
+
+  .artigo2-texto9 p{
+    font-size: 10px; 
+    padding-top: 50%;
+  }
+  
+  .artigo2-section9:hover {
+    transform: translateY(90%);
+  }
+
+  /*------------------------------- TEXTO 10 ----------------------------------*/
+  .artigo2-section10{
+    float: right;
+    margin-top: -30%;
+    margin-right: 1%;
+    height: 15vh;
+  }
+
+  .artigo2-texto10 p{
+    font-size: 10px; 
+    padding-top: 50%;
+  }
+    
+  .artigo2-section10:hover {
+    transform: translateY(-30%);
+  }
+  
+  /*------------------------------- TEXTO 11 -----------------------------------------*/ 
+  .artigo2-section11{
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 9%;
+  }
+  .artigo2-texto11 p{
+    font-size: 12px; 
+    padding-top: 14px;
+  }
+      
+  /*------------------------------- TEXTO 14 -----------------------------------------*/
+  .artigo2-section14{
+    width: 80%;
+      float: left;
+    margin-left: 8%;
+  }
+  .artigo2-texto14 p{
+    font-size: 12px; 
+    padding-top: 14px;
+  }
+    
+  /*------------------------------- IMAGEM 4 -----------------------------------------*/
+  .imagem4{
+    width: 35%;
+    float: left;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-bottom: -8%;
+  }
+    
+  /*------------------------------- TEXTO 15 -----------------------------------------*/   
+  .artigo2-texto15 p{
+    font-size: 10px; 
+    padding-top: 50%;
+  }
+
+
+  .artigo2-section15 {
+    font-size: 14px; 
+    width: 40%;
+    height: 60vh;
+    margin-left: -30%;
+    margin-top: -5vh;
+    float: left;
+  }
+  
+  .artigo2-section15:hover {
+    transition: opacity 100ms;
+    transform: translateX(90%);
+    opacity: 1;
+    height: 6vh;
+  }
+    
+  /*----------------------------- TITULO 1 -------------------------------*/
+  .artigo2-section17{
+    width: 80%;
+    margin-left: 8%;
+  }
+
+  .artigo2-texto17 p{
+    font-size: 20px; 
+    padding-top: 14px;
+  }
+    
+  /*----------------------------- TITULO 2 -------------------------------*/
+  .titulo2 {
+    font-size: 22px; 
+    width: 200px;
+    margin-left: 30px;
+    margin-top: -115px;
+    height: 200px;
+    float: left;
+    line-height: 1.4;
+    padding: 50px;
+  }
+    
+  .titulo2:hover {
+    transform: translateY(20px);
+  }
+  
+  /*----------------------------- TITULO 4 -------------------------------*/
+  .titulo4{
+    float: right;
+    width: 200px;
+    font-size: 20px; 
+    margin-top: -100px;
+    margin-right: -5%;
+    line-height: 1.4;
+  }
+    
+  /*------------------------------- TEXTO 18 -----------------------------------------*/
+  .artigo2-section18{
+    width: 80%;
+    float: left;
+    margin-left: 9%;
+    margin-top: 4%;
+    padding-bottom: 4%;
+  }
+  .artigo2-texto18 p{
+    font-size: 12px; 
+  }
+
+  /*------------------------------- ABOUT -----------------------------------------*/
+  .about_revista{
+    font-size: 16px; 
+  }
+
+  .about-image{
+    width: 100%;
+  }
+
+  .about-image img{
+    width: 50%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+  }
+
+  .about-content p{
+    font-size: 16px; 
+  }
+
+  .about-content-section{
+    width: 100%;
+  }
+
+  .about-h1{
+    font-size: 50px; 
+  }
+
+  /*------------------ titulos artigos --------------------*/
+  .titulos_artigos h1 {
+    font-variation-settings: 'wdth' 400,'wght' 400;
+    font-size: 40px;
+  }
+
+  /*------------------ # ----------------------*/
+  .container-part1{
+    min-height: 80vh;
+  }
+
+  .container-part2{
+    min-height: 80vh;
+  }
+
+  .container-part3{
+    height: 100vh;
+  }
+
+
+  .imagem1 {
+    float: right;
+    width: 80%;
+    margin-right: 10%;
+    margin-top: 20%;
+    height: 10vh;
+  }
+  .text11-box{
+    width: 98%;
+  }
+
+  .img2-img3-box{
+    width: 100%;
+    min-height: 50vh;
+    margin-right: 0%;
+  }
+
+  .imagem2 {
+    float: none;
+    width: 70%;
+    margin-left: 12%;
+    height: 15vh;
+  }
+
+  .imagem3 {
+    float: left;
+    width: 70%;
+    margin-left: 12%;
+    margin-top: 22%;
+    height: 15vh;
+  }
+
+  .artigo2-section13 { 
+    width: 98%;
+    margin-right: 0;
+    height: 15vh;
+    margin-top: -2vh;  
+    float: right;
+  }
+
+  .artigo2-texto13 p{
+    font-size: 10px; 
+    padding-top: 50%;
+  }
+  
+  .artigo2-section13:hover {
+    transition: opacity 100ms;
+    transform: translateY(10%);
+    opacity: 1;
+  }
+
+  .artigo2-section12 {
+    float: left;
+    font-size: 10px; 
+    width: 98%;
+    height: 15vh;
+    margin-top: -2vh;    
+  }
+
+   .artigo2-texto12 p{
+    font-size: 10px; 
+    padding-top: 50%;
+  }
+
+  .artigo2-section12:hover {
+    transition: opacity 100ms;
+    transform: translateY(10%);
+    opacity: 1;
+  }
+
+  .article2-section2{
+    min-height: 80vh;
+  }  
+
+}
+
+
+
+/*-----------MEDIA QUERIES MOBILE -----------*/
+@media screen and (min-width: 638px) and (max-width:888px){
+	.artigo1-section{
+			width: 100%;
+			min-height: 60vh;
+			display: flex;
+			justify-content: center;
+		}
+  /*--------------- Pagina inicial 'ALTA BAIXA' tamanho da letra --------------------------*/
+  .loading-text {
+    font-size: 16px;
+  }
+
+  /*-------------------- NAV BAR ------------------*/
+  .alta-links{
+    font-size: 16px;
+  }
+  /* -------------- 1 paragrafo --------------*/
+  .article1-first_paragraph{
+    font-size: 18px; 
+  }
+
+  /*-------------- thirteen ways of -----------------*/
+  .article1-thirteen p{
+    font-size: 120px; 
+  }
+
+  /*-------------- looking at a typeface -----------------*/
+  .article1-looking p{
+    font-size: 120px; 
+  }
+
+  /*4 PARAGRAFOS do PRIMEIRO ARTIGO*/
+  /*----- TEXTO - 1 PARAGRAFO -------*/
+  .artigo1-content-section{
+    width: 70%;
+    margin-left: 5%;
+  }
+  .artigo1-content p{
+    font-size: 14px; 
+    padding-top: 14px;
+  }
+
+  /*------ TEXTO - 2 PARAGRAFO ------*/
+  .artigo1-content-section2{
+    float: right;
+    width: 60%;
+    margin-top: 8%;
+    margin-right: 10%;
+  }
+
+  .artigo1-content2 p{
+    font-size: 14px; 
+    padding-top: 14px;
+  }
+
+  /*------- TEXTO - 3 PARAGRAFO --------*/
+  .artigo1-content-section3{
+    width: 60%;
+  }
+  .artigo1-content3 p{
+    font-size: 14px; 
+  }
+
+  /*-------- TEXTO - 4 PARAGRAFO --------*/
+  .artigo1-content-section4{
+    float: right;
+    width: 60%;
+    margin-top: 8%;
+    margin-right: 17%;
+  }
+  .artigo1-content4 p{
+    font-size: 14px; 
+    padding-top: 14px;
+  }
+
+  /*--------------------------- TEXTO - 1 ARGUMENTO --------------------------------*/
+  .artigo1-argumento1-section{
+    width: 70%;
+  }
+  .artigo1-argumento1 p{
+    font-size: 14px;
+  }
+
+  /*--------------------------- TEXTO - 2 ARGUMENTO --------------------------------*/
+  .artigo1-argumento2-section{
+    width: 60%;
+  }
+  .artigo1-argumento2 p{
+    font-size: 14px;
+  }
+
+  /*------------------------------ TEXTO - 3 ARGUMENTO -----------------------------*/
+  .artigo1-argumento3-section{
+    width: 70%;
+  }
+
+  .artigo1-argumento3 p{
+    font-size: 14px;
+  }
+
+  /*------------------------------- TEXTO - 4 PARAGRAFO ---------------------------*/
+  .artigo1-argumento4-section{
+    width: 60%;
+  }
+  .artigo1-argumento4 p{
+    font-size: 14px; 
+  }
+
+  /*--------------------------- TEXTO - 5 ARGUMENTO ------------------------------------*/
+  .artigo1-argumento5-section{
+    width: 70%;
+  }
+  .artigo1-argumento5 p{
+    font-size: 14px;
+  }
+
+  /*--------------------------- TEXTO - 6 ARGUMENTO ---------------------------------------*/
+  .artigo1-argumento6-section{
+    width: 60%;
+  }
+
+  .artigo1-argumento6 p{
+    font-size: 14px;
+  }
+
+  /*------------------------------ TEXTO - 7 ARGUMENTO -------------------------------------*/
+  .artigo1-argumento7-section{
+    width: 70%;
+  }
+
+  .artigo1-argumento7 p{
+    font-size: 14px;
+  }
+
+  /*------------------------------- TEXTO - 8 PARAGRAFO ----------------------------------*/
+  .artigo1-argumento8-section{
+    width: 60%;
+  }
+  .artigo1-argumento8 p{
+    font-size: 14px;
+  }
+
+  /*--------------------------- TEXTO - 9 ARGUMENTO ------------------------------------*/
+  .artigo1-argumento9-section{
+    width: 70%;
+  }
+  .artigo1-argumento9 p{
+    font-size: 14px;
+  }
+
+  /*--------------------------- TEXTO - 10 ARGUMENTO ---------------------------------------*/
+  .artigo1-argumento10-section{
+    width: 60%;
+  }
+  .artigo1-argumento10 p{
+    font-size: 14px;
+  }
+
+  /*------------------------------ TEXTO - 11 ARGUMENTO -------------------------------------*/
+  .artigo1-argumento11-section{
+    width: 70%;
+  }
+  .artigo1-argumento11 p{
+    font-size: 14px;
+  }
+
+  /*------------------------------- TEXTO - 12 PARAGRAFO ----------------------------------*/
+  .artigo1-argumento12-section{
+    width: 60%;
+  }
+  .artigo1-argumento12 p{
+    font-size: 14px;
+  }
+
+  /*------------------------------- TEXTO - 13 PARAGRAFO ----------------------------------*/
+  .artigo1-argumento13-section{
+    width: 60%;
+  }
+  .artigo1-argumento13 p{
+    font-size: 14px;
+  }
+      
+  /*------------------------ ARTIGO 2 -INTRODUÇAO ---------------------------------*/
+  .article2-section{
+      min-height: 9vh;
+  }
+  .article2-first_paragraph{
+    font-size: 16px; 
+  }
+    
+  /*------------------------------- TEXTO 1 --------------------------------------*/
+.artigo2-texto1 p{
+  font-size: 12px; 
+}
+    
+  /*------------------------------- TEXTO 2 --------------------------------------*/
+  .artigo2-section2{
+    width: 40%;
+    margin-right: 8%;
+      margin-top: 8%;
+      transition: transform 950ms ease-in;
+  }
+  .artigo2-texto2 p{
+    font-size: 12px; 
+    padding-top: 14px;
+  }
+  .artigo2-section2:hover {
+    transform: translateX(-196px);
+  }
+    
+  /*-----------------------ANIMAÇOES----------------------------------------*/
+  .move1 {
+  font-size: 12px; 
+  margin-top: 166px;
+  margin-right: 200px;
+  transition: transform 950ms ease-in;
+  }
+
+  .move1:hover {
+    transform: translateX(-30px);
+  }
+
+  .move2 {
+    font-size: 13px; 
+    margin-top: 12px;
+    margin-right: 160px;
+    transition: transform 950ms ease-in;
+  }
+  
+  .move2:hover {
+    transform: translateX(-102px);
+  }
+
+  .move3 {
+    font-size: 12px; 
+    margin-top: 215px;
+    margin-right: 100px;
+    transition: transform 950ms ease-in;
+  }
+  
+  .move3:hover {
+    transform: translateX(-197px);
+  }
+    
+  /*------------------------------- TEXTO 5 -----------------------------------------*/
+.artigo2-section5{
+	float: left;
+	margin-top: -20%;
+	margin-left: 6%;
+  height: 20vh;
+  width: 50px;
+}
+
+.artigo2-texto5 p{
+  font-size: 10px; 
+  line-height: 1.4;
+	padding-top: 14px;
+}
+  
+.artigo2-section5:hover {
+  transform: translateY(120px);
+}
+
+  /*------------------------------- TEXTO 6 ----------------------------------*/
+  .artigo2-section6{
+    float: right;
+    margin-top: -35%;
+    margin-right: 38%;
+    height: 20vh;
+    width: 50px;
+  }
+
+  .artigo2-texto6 p{
+    font-size: 10px; 
+    line-height: 1.4;
+    padding-top: 14px;
+  }
+  
+  .artigo2-section6:hover {
+    transform: translateY(90px);
+  }
+
+  /*------------------------------- TEXTO 7 ----------------------------------*/
+  .artigo2-section7{
+    float: right;
+    margin-top: -36%;
+    margin-right: 30%;
+    height: 20vh;
+    width: 50px;
+  }
+
+  .artigo2-texto7 p{
+    font-size: 10px; 
+    line-height: 1.4;
+    padding-top: 14px;
+  }
+    
+  .artigo2-section7:hover {
+    transform: translateY(70px);
+  }
+
+  /*------------------------------- TEXTO 8 ----------------------------------*/
+  .artigo2-section8{
+    float: right;
+    margin-top: -35%;
+    margin-right: 22%;
+    height: 20vh;
+    width: 50px;
+  }
+
+  .artigo2-texto8 p{
+    font-size: 10px; 
+    line-height: 1.4;
+    padding-top: 14px;
+  }
+    
+  .artigo2-section8:hover {
+    transform: translateY(80px);
+  }
+
+  /*------------------------------- TEXTO 9 ----------------------------------*/
+  .artigo2-section9{
+    float: right;
+    margin-top: -35%;
+    margin-right: 16%;
+    height: 20vh;
+    width: 50px;
+  }
+
+  .artigo2-texto9 p{
+    font-size: 10px; 
+    line-height: 1.4;
+    padding-top: 14px;
+  }
+  
+  .artigo2-section9:hover {
+    transform: translateY(200px);
+  }
+
+  /*------------------------------- TEXTO 10 ----------------------------------*/
+  .artigo2-section10{
+    float: right;
+    margin-top: -26%;
+    margin-right: 9%;
+    height: 20vh;
+    width: 50px;
+  }
+
+  .artigo2-texto10 p{
+    font-size: 10px; 
+    line-height: 1.4;
+    padding-top: 10px;
+  }
+    
+  .artigo2-section10:hover {
+    transform: translateY(20px);
+  }
+    
+  /*------------------------------- TEXTO 11 -----------------------------------------*/
+  .artigo2-section11{
+    width: 80%;
+    margin-left: 8%;
+  }
+  .artigo2-texto11 p{
+    font-size: 12px; 
+    padding-top: 14px;
+  }
+
+  /*------------------------------- TEXTO 12 ----------------------------------*/
+  .artigo2-section12 {
+    font-size: 10px; 
+    width: 35%;
+    height: 30vh;
+    margin-right: 250px;
+    margin-top: -249px;
+    float: right;
+    line-height: 1.4;
+  }
+  
+  .artigo2-section12:hover {
+    transform: translateY(174px);
+    opacity: 1;
+  }
+    
+  /*------------------------------- IMAGEM 3 -----------------------------------------*/
+  .imagem3{
+    width: 38%;
+    float: right;
+    margin-top: -54%;
+    margin-right: 8%;
+  }
+    
+  /*------------------------------- TEXTO 13 ----------------------------------*/
+  .artigo2-section13 {
+    font-size: 10px; 
+    width: 35%;
+    height: 30vh;
+    margin-right: -157px;
+    margin-top: -247px;
+    float: right;
+    line-height: 1.4;
+  }
+  
+  .artigo2-section13:hover {
+    transform: translateY(174px);
+    opacity: 1;
+  }
+    
+  /*------------------------------- IMAGEM 4 -----------------------------------------*/
+  .imagem4 {
+    float: none;
+    width: 40%;
+    margin-top: 9%;
+    margin-left: 5%;
+	  height: 60vh;
+  }
+  /*------------------------------- TEXTO 15 -----------------------------------------*/
+  .artigo2-section15 {
+    font-size: 14px; 
+    width: 40%;
+    height: 60vh;
+    margin-left: 8%;
+    margin-top: -60vh;
+    float: left;
+    opacity: 0;
+  }
+  
+  .artigo2-section15:hover {
+    transition: opacity 100ms;
+    transform: translateX(100%);
+    opacity: 1;
+    height: 6vh;
+  }
+    
+  /*----------------------------- PAGINA 4 -------------------------------*/
+  .article2-section16{
+    min-height: 68vh;
+  }
+    
+  /*------------------------------- ABOUT -----------------------------------------*/
+  .about_revista{
+    font-size: 18px; 
+  }
+
+  .about-image{
+    width: 100%;
+  }
+
+  .about-image img{
+    width: 50%;
+    margin-bottom: 5%;
+  }
+
+  .about-content p{
+    font-size: 18px; 
+  }
+
+  .about-content-section{
+    width: 100%;
+    }
+
+  .about-h1{
+    font-size: 60px; 
+  }
+  
+  /*-------------------- # ------------------*/
+  .titulos_artigos h1 {
+    font-variation-settings: 'wdth' 400,'wght' 400;
+    font-size: 78px;      
+  }
+
+  /*.container-part1{}*/
+
+  .container-part2{
+    min-height: 80vh;
+  }
+
+  .container-part3{
+    height: 100vh;
+  }
+
+  .artigo2-texto3 p{
+    font-size: 14px; 
+  }
+
+  .imagem1 {
+    margin-top: 10%;
+  }
+
+  
+  .img2-img3-box{
+    width: 100%;
+    min-height: 50vh;
+    margin-right: 0%;
+  }
+
+  .imagem2 {
+    float: none;
+    width: 70%;
+    margin-left: 12%;
+    height: 15vh;
+    margin-top: 0%;
+  }
+
+  .imagem3 {
+    float: left;
+    width: 70%;
+    margin-left: 12%;
+    margin-top: 12%;
+    height: 15vh;
+  }
+
+  .artigo2-section13 {
+    font-size: 14px; 
+    width: 98%;
+    margin-right: 0;
+    height: 15vh;
+    margin-top: 0%;
+    float: right;
+    opacity: 0;
+  }
+  
+  .artigo2-section13:hover {
+    transition: opacity 100ms;
+    transform: translateY(140px);
+    opacity: 1;
+    height: 8vh;
+  }
+
+  .artigo2-section12 {
+    float: left;
+    font-size: 14px; 
+    width: 98%;
+    height: 15vh;
+    margin-top: 0%;
+    opacity: 0;
+  }
+
+  .artigo2-section12:hover {
+    transition: opacity 100ms;
+    transform: translateY(140px);
+    height: 8vh;
+    opacity: 1;
+  }
+
+  .text11-box{
+    width: 98%;
+  }
+
+  .article2-section2{
+    min-height: 65vh;
+  }  
+
+  .artigo2-section14{
+    float: none;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  
+  .artigo2-texto14 p{
+    font-size: 12px; 
+  }
+  
+}
+
+
+
+/*-----------MEDIA QUERIES DESKTOP -----------*/
+@media screen and (min-width: 886px) and (max-width:1300px){  
+  /*--------------- Pagina inicial 'ALTA BAIXA' tamanho da letra --------------------------*/
+  .loading-text {
+    font-size: 22px;
+  }
+
+ /*-------------------- NAV BAR ------------------*/
+ .alta-links{
+  font-size: 18px;
+  }
+
+  /*-------------- 1 paragrafo -----------------*/
+  .article1-first_paragraph{
+    font-size: 20px; 
+  }
+
+  /*-------------- thirteen ways of-----------------*/
+  .article1-thirteen p{
+    font-size: 140px; 
+  }
+
+  /*-------------- looking at a typeface -----------------*/
+  .article1-looking p{
+    font-size: 140px; 
+  }
+
+  /*primeiros 4 paragrafos do primeiro artigo*/
+  /*----- TEXTO - 1 PARAGRAFO -------*/
+  .artigo1-content-section{
+    width: 65%;
+    margin-left: 5%;
+  }
+  .artigo1-content p{
+    font-size: 16px; 
+    padding-top: 14px;
+  }
+
+  /*------ TEXTO - 2 PARAGRAFO ------*/
+  .artigo1-content-section2{
+    float: right;
+    width: 50%;
+    margin-top: 8%;
+    margin-right: 10%;
+  }
+
+  .artigo1-content2 p{
+    font-size: 16px; 
+    padding-top: 14px;
+  }
+
+  /*------- TEXTO - 3 PARAGRAFO --------*/
+  .artigo1-content-section3{
+    width: 50%;
+  }
+
+  .artigo1-content3 p{
+    font-size: 16px; 
+  }
+
+  /*-------- TEXTO - 4 PARAGRAFO --------*/
+  .artigo1-content-section4{
+    float: right;
+    width: 50%;
+    margin-top: 8%;
+    margin-right: 17%;
+  }
+  .artigo1-content4 p{
+    font-size: 16px; 
+    padding-top: 14px;
+  }
+
+  /*--------------------------- TEXTO - 1 ARGUMENTO --------------------------------*/
+  .artigo1-argumento1-section{
+    width: 65%;
+    margin-left: 5%;
+  }
+  .artigo1-argumento1 p{
+    font-size: 16px; 
+    padding-top: 14px;
+  }
+
+  /*--------------------------- TEXTO - 2 ARGUMENTO --------------------------------*/
+  .artigo1-argumento2-section{
+    width: 50%;
+    margin-top: 5%;
+    margin-right: 10%;
+  }
+
+  .artigo1-argumento2 p{
+    font-size: 16px; 
+  }
+
+  /*------------------------------ TEXTO - 3 ARGUMENTO -----------------------------*/
+  .artigo1-argumento3-section{
+    width: 65%;
+    margin-left: 5%;
+  }
+
+  .artigo1-argumento3 p{
+    font-size: 16px; 
+  }
+
+  /*------------------------------- TEXTO - 4 PARAGRAFO ---------------------------*/
+  .artigo1-argumento4-section{
+    width: 50%;
+    margin-top: 5%;
+    margin-right: 10%;
+  }
+  .artigo1-argumento4 p{
+    font-size: 16px; 
+  }
+
+  /*--------------------------- TEXTO - 5 ARGUMENTO ------------------------------------*/
+  .artigo1-argumento5-section{
+    width: 65%;
+    margin-left: 5%;
+  }
+  .artigo1-argumento5 p{
+    font-size: 16px; 
+  }
+
+  /*--------------------------- TEXTO - 6 ARGUMENTO ---------------------------------------*/
+.artigo2-section6{
+  float: right;
+  margin-top: -35%;
+  margin-right: 38%;
+  height: 20vh;
+  width: 50px;
+}
+
+.artigo2-texto6 p{
+  font-size: 10px; 
+  padding-top: 14px;
+}
+
+.artigo2-section6:hover {
+  transform: translateY(120px);
+}
+
+  /*------------------------------ TEXTO - 7 ARGUMENTO -------------------------------------*/
+  .artigo1-argumento7-section{
+    width: 65%;
+    margin-left: 5%;
+  }
+
+  .artigo1-argumento7 p{
+    font-size: 16px; 
+  }
+
+  /*------------------------------- TEXTO - 8 PARAGRAFO ----------------------------------*/
+  .artigo1-argumento8-section{
+    width: 50%;
+    margin-top: 5%;
+    margin-right: 10%;
+  }
+  .artigo1-argumento8 p{
+    font-size: 16px; 
+  }
+
+  /*--------------------------- TEXTO - 9 ARGUMENTO ------------------------------------*/
+  .artigo1-argumento9-section{
+    width: 65%;
+    margin-left: 5%;
+  }
+  .artigo1-argumento9 p{
+    font-size: 16px; 
+  }
+
+  /*--------------------------- TEXTO - 10 ARGUMENTO ---------------------------------------*/
+  .artigo1-argumento10-section{
+    width: 50%;
+    margin-top: 5%;
+    margin-right: 10%;
+  }
+
+  .artigo1-argumento10 p{
+    font-size: 16px; 
+  }
+
+  /*------------------------------ TEXTO - 11 ARGUMENTO -------------------------------------*/
+  .artigo1-argumento11-section{
+    width: 65%;
+    margin-left: 5%;
+  }
+
+  .artigo1-argumento11 p{
+    font-size: 16px; 
+  }
+
+  /*------------------------------- TEXTO - 12 PARAGRAFO ----------------------------------*/
+  .artigo1-argumento12-section{
+    width: 50%;
+    margin-top: 5%;
+    margin-right: 10%;
+  }
+  .artigo1-argumento12 p{
+    font-size: 16px; 
+  }
+
+  /*------------------------------- TEXTO - 13 PARAGRAFO ----------------------------------*/
+  .artigo1-argumento13-section{
+    width: 65%;
+    margin-left: 5%;
+  }
+  .artigo1-argumento13 p{
+    font-size: 16px; 
+  }
+      
+  /*-------------------------------------------------------------------- ARTIGO 2 ---------------------------------------------------------------------------*/
+  .article2-first_paragraph{
+    font-size: 20px; 
+  }
+
+  .artigo2-texto1 p{
+    font-size: 14px; 
+    padding-top: 14px;
+  }
+
+  .move1 {
+    font-size: 14px; 
+    margin-top: 142px;
+    margin-right: 620px;
+    transition: transform 950ms ease-in;
+    }
+  
+  .move1:hover {
+    transform: translateX(-265px);
+  }
+
+  .move2 {
+    font-size: 14px; 
+    margin-top: -7px;
+    margin-right: 540px;
+    transition: transform 950ms ease-in;
+  }
+  
+  .move2:hover {
+    transform: translateX(-556px);
+  }
+
+  .move3 {
+    font-size: 14px; 
+    margin-top: 120px;
+    margin-right: 350px;
+    transition: transform 950ms ease-in;
+  }
+  
+  .move3:hover {
+    transform: translateX(-625px);
+  }
+
+  .artigo2-section2{
+    margin-top: 0.5%;
+    margin-right: 5%;
+    transition: transform 950ms ease-in;
+  }
+
+  .artigo2-texto2 p{
+    font-size: 14px; 
+    padding-top: 14px;
+  }
+
+  .artigo2-section2:hover {
+      transform: translateX(-676px);
+    }
+
+  /*--------------------------- TEXTO 3 ------------------------------------*/
+  .artigo2-section3{
+    float: left;
+    width: 40%;
+    margin-top: 0;
+    margin-left: 5%;
+  }
+
+  .artigo2-texto3 p{
+    font-size: 14px; 
+    padding-top: 14px;
+  }
+
+  /*--------------------------- TEXTO 4 ---------------------------------------*/
+  .artigo2-section4{
+    float: right;
+    width: 40%;
+    margin-top: 0;
+    margin-right: 10%;
+  }
+
+  .artigo2-texto4 p{
+    font-size: 12px; 
+    line-height: 1.4;
+    padding-top: 14px;
+  }
+
+  /*------------------------------ IMAGEM 1 -------------------------------------*/
+  .imagem1{
+    float: right;
+    width: 38%;
+    margin-right: 10%;
+    margin-top: 100px;
+	  height: 20vh;
+  }
+
+  /*------------------------------ TEXTO 5 -------------------------------------*/
+  .artigo2-section5{
+    float: right;
+    margin-top: 6%;
+    margin-right: -5%;
+    height: 20vh;
+    opacity: 0;
+  }
+
+  .artigo2-texto5 p{
+    font-size: 12px; 
+    padding-top: 14px;
+  }
+  
+  .artigo2-section5:hover {
+    transform: translateY(0px);
+  }
+
+  /*------------------------------- TEXTO 6 ----------------------------------*/
+  .artigo2-section6{
+    float: right;
+    margin-top: 6%;
+    margin-right: -14%;
+    height: 20vh;
+  }
+
+  .artigo2-texto6 p{
+    font-size: 12px; 
+    line-height: 1.4;
+    padding-top: 14px;
+  }
+  
+  .artigo2-section6:hover {
+    transform: translateY(178px);
+  }
+
+  /*------------------------------- TEXTO 7 ----------------------------------*/
+  .artigo2-section7{
+    float: right;
+    margin-top: 6%;
+    margin-right: -20.5%;
+    height: 20vh;
+  }
+
+  .artigo2-texto7 p{
+    font-size: 12px; 
+    padding-top: 14px;
+  }
+  
+  .artigo2-section7:hover {
+    transform: translateY(138px);
+  }
+
+  /*------------------------------- TEXTO 8 ----------------------------------*/
+  .artigo2-section8{
+    float: right;
+    margin-top: 6%;
+    margin-right: -28%;
+    height: 20vh;
+  }
+
+  .artigo2-texto8 p{
+    font-size: 12px; 
+    padding-top: 14px;
+  }
+  
+  .artigo2-section8:hover {
+    transform: translateY(200px);
+  }
+
+  /*------------------------------- TEXTO 9 ----------------------------------*/
+  .artigo2-section9{
+    float: right;
+    margin-top: 6%;
+    margin-right: -35%;
+    height: 20vh;
+  }
+
+  .artigo2-texto9 p{
+    font-size: 12px; 
+    padding-top: 14px;
+  }
+  
+  .artigo2-section9:hover {
+    transform: translateY(238px);
+  }
+
+  /*------------------------------- TEXTO 10 ----------------------------------*/
+  .artigo2-section10{
+    float: right;
+    margin-top: 6%;
+    margin-right: -43%;
+    height: 20vh;
+  }
+
+  .artigo2-texto10 p{
+    font-size: 12px; 
+    padding-top: 14px;
+  }
+  
+  .artigo2-section10:hover {
+    transform: translateY(-38px);
+  }
+
+  /*--------------------------- TEXTO 11 ------------------------------------*/
+  .artigo2-section11{
+    width: 40%;
+    margin-top: 0;
+    margin-left: 5%;
+  }
+
+  .artigo2-texto11 p{
+    font-size: 14px; 
+    padding-top: 14px;
+  }
+
+/*------------------------------- TEXTO 12 ----------------------------------*/
+  .artigo2-section12 {
+    float: left;
+    font-size: 14px; 
+    width: 98%;
+    height: 20vh;
+    margin-top: 0%;
+    opacity: 0;
+  }
+
+  .artigo2-section12:hover {
+    transition: opacity 100ms;
+    transform: translateY(190px);
+    opacity: 1;
+    height: 8vh;
+  }
+
+  /*------------------------------- TEXTO 13 ----------------------------------*/
+  .artigo2-section13 {
+    font-size: 14px; 
+    width: 98%;
+    height: 20vh;
+    margin-top: 0%;
+    float: right;
+    opacity: 0;
+  }
+  
+  .artigo2-section13:hover {
+    transition: opacity 100ms;
+    transform: translateY(190px);
+    opacity: 1;
+    height: 8vh;
+  }
+
+  /*--------------------------- TEXTO 14 ------------------------------------*/
+  .artigo2-section14{
+    width: 40%;
+    margin-top: 8%;
+    margin-right: 5%;
+  }
+
+  .artigo2-texto14 p{
+    font-size: 14px; 
+    padding-top: 14px;
+  }
+
+  /*------------------------------ IMAGEM 4 -------------------------------------*/
+  .imagem4 {
+    float: left;
+    width: 20%;
+    margin-top: 8%;
+    margin-left: 10%;
+	  height: 60vh;
+  }
+
+  /*------------------------------- TEXTO 15 ----------------------------------*/
+.artigo2-section15 {
+    font-size: 12px; 
+    width: 20%;
+    height: 60vh;
+    margin-left: -15%;
+    margin-top: 15%;
+    opacity: 0;
+  }
+  
+  .artigo2-section15:hover {
+    transform: translateX(90%);
+  }
+
+  /*--------------------------- TITULO ------------------------------------*/
+  .artigo2-section17{
+    float: left;
+    margin-top: 0;
+    margin-left: 5%;
+  }
+
+  .artigo2-texto17 p{
+    font-size: 40px; 
+    padding-top: 14px;
+  }
+
+  .titulo2 {
+    font-size: 45px; 
+    font-weight: 50;
+    width: 200px;
+    margin-left: -50px;
+    margin-top: 0px;
+    height: 200px;
+    padding: 50px;
+  }
+  
+  .titulo2:hover {
+    transform: translateY(20px);
+  }
+
+  .titulo4{
+    font-size: 40px; 
+    margin-top: 240px;
+    margin-left: -25px;
+  }
+
+  /*--------------------------- TEXTO 18 ------------------------------------*/
+  .artigo2-section18{
+    width: 40%;
+    margin-top: 25%;
+    margin-right: 5%;
+  }
+
+  .artigo2-texto18 p{
+    font-size: 14px; 
+    padding-top: 14px;
+  }
+
+  /*------------------------------- ABOUT -----------------------------------------*/
+  .about_revista{
+    font-size: 20px; 
+  }
+
+  .about-content p{
+    font-size: 20px; 
+  }
+
+
+  .about-h1{
+    font-size: 70px; 
+  }
+
+  /*-------------------- # ------------------*/  
+  .titulos_artigos h1 {
+    font-variation-settings: 'wdth' 600,'wght' 600;
+    font-size: 98px;      
+  } 
+
+  /*.container-part1{}*/
+
+  .container-part2{
+    min-height: 85vh;
+  }
+
+  .container-part3{
+    height: 100vh;
+  }
+  
+  /*------------------------------ IMAGEM 2 e 3 -------------------------------------*/
+  .imagem2 {
+    position: initial;
+    float: none;
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 0;
+    height: 20vh;
+  }
+
+  .imagem3 {
+    float: left;
+    width: 80%;
+    margin-right: 0;
+    margin-left: 8%;
+    margin-top: 20%;
+    height: 20vh;
+  }
+
+  .img2-img3-box{
+    margin-top: 2%;
+    width: 50%;
+    min-height: 70vh;
+    float: right;
+    margin-right: 5%;
+  }
+
+  .article2-section2{
+    min-height: 65vh;
+  }  
+}
+
+/*-----------MEDIA QUERIES -----------*/
