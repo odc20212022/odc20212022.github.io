@@ -789,6 +789,13 @@ body{
   background-repeat: no-repeat;
 }
 
+.text11-box{
+    display: flex;
+    width: 40%;
+    margin-top: 2%;
+    margin-left: 1%;
+    float: left;
+  }
 /*------------------------------ TEXTO 5 -------------------------------------*/
 .artigo2-section5{
 	float: right;
@@ -966,6 +973,7 @@ body{
   font-family: 'Work Sans', sans-serif;
   text-align: justify;
 }
+
 
 /*------------------------------ IMAGEM 2 -------------------------------------*/
 .imagem2 {
@@ -1534,7 +1542,11 @@ body{
 	width: 75%;
 	margin-left: 8%;
 }
-    
+	
+.text11-box{
+    width: 98%;
+  }
+	
 /*------------------------------- TEXTO 5 -----------------------------------------*/
   .artigo2-section5{
     float: left;
@@ -2218,6 +2230,10 @@ body{
     float: right;
     margin-top: -54%;
     margin-right: 8%;
+  }
+	
+	 .text11-box{
+    width: 98%;
   }
     
 /*------------------------------- TEXTO 13 ----------------------------------*/
